@@ -6,7 +6,91 @@
   <link rel="stylesheet" href="css/tailwind.css">
 
 </head>
-<body class="bg-yellow-500">
+<body class="">
+<div class="flex flex-wrap md:flex-nowrap w-screen h-screen">
 
+<!--section left dashboard-->
+
+
+        <div class=" flex flex-col justify-center w-full md:h-screen bg-yellow-600 sm:px-8 pt-16">
+
+<!--   Company logo-->
+
+        <div class="flex items-center w-full px-8 bg-yellow-600 mb-8 ">
+            <img src="images/etl_logo.svg" alt="eat to live logo">
+        </div>
+
+        <form id="etl_form" class="flex flex-col space-y-2 p-4 mr-4 mb-8 bg-indigo-400 border-2 border-pink-900 rounded-md md:max-w-full">
+
+<!--    name input-->
+
+            <div>
+                <label for="name">
+                    <input type="text" name="name" id="name" placeholder="enter your name"
+                            class="w-full p-2 pl-4 rounded-lg outline-none
+                            hover:bg-indigo-100">
+                </label>
+                <div id="error-name" class="w-full"></div>
+            </div>
+
+            <!--  text area input       -->
+
+            <div>
+                <label for="employee-story">
+                    <textarea name="employee-story" id="employee-story"
+                    class="w-full p-3 hover:bg-indigo-100">
+
+                    </textarea>
+                </label>
+            </div>
+
+            <!-- submit button-->
+
+            <div>
+                <label for="submit">
+                    <input type="submit" name="submit" id="submit" value="Add your story"
+                           class="w-full bg-indigo-600 p-2 pl-4 font-bold rounded-lg outline-none
+                                 text-yellow-100 hover:bg-indigo-900">
+                </label>
+            </div>
+
+
+        </form>
+    </div>
+
+    <!--section right dashboard-->
+
+    <div class="w-full h-screen bg-pink-900 text-pink-100 px-4 pt-16">
+
+<!--        empty div for user response-->
+        <div id="employeeStory_add">
+
+        </div>
+
+        <div>
+            <h3 class="font-medium">Sonia Chen</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores error eum
+                facere itaque iure labore laboriosam maxime natus nulla voluptates.</p>
+        </div>
+
+        <hr class="my-3">
+
+        <div>
+            <h3 class="font-medium">Patty McPherson</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores error eum
+                facere itaque iure labore laboriosam maxime natus nulla voluptates.</p>
+        </div>
+
+        <hr class="my-3">
+
+        <div>
+            <h3 class="font-medium">Steven Davis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores error eum
+                facere itaque iure labore laboriosam maxime natus nulla voluptates.</p>
+        </div>
+
+
+    </div>
+</div>
 </body>
 </html>
